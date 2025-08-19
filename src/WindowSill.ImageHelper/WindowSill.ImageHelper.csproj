@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net9.0-windows10.0.22621</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>preview</LangVersion>
+
+        <PackageId>WindowSill.ImageHelper</PackageId>
+        <Version>0.0.1</Version>
+        <Authors>Etienne Baudoux</Authors>
+        <Title>Image Helper</Title>
+        <Description>
+            Drag and drop images for instant processing. Convert formats, resize, or compress without opening bulky editing software.
+
+            Handle single images or batch-process dozens at once; all the essential image tools you need, right in your digital window sill.
+        </Description>
+        <PackageIcon>Assets/image.png</PackageIcon>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <PackageProjectUrl>https://TODO</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/WindowSill-app/WindowSill.ImageHelper</RepositoryUrl>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="Assets/image.png" Pack="true" PackagePath="\Assets\" />
+        <None Include="LICENSE.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="CommunityToolkit.WinUI.Controls.Primitives" Version="8.2.250402" />
+        <PackageReference Include="Magick.NET.Core" Version="14.8.0" />
+        <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="14.8.0" />
+        <PackageReference Include="WindowSill.API" Version="0.0.0.2" />
+    </ItemGroup>
+</Project>
