@@ -6,7 +6,7 @@
         <LangVersion>preview</LangVersion>
 
         <PackageId>WindowSill.ImageHelper</PackageId>
-        <Version>0.0.3</Version>
+        <Version>0.0.3.1</Version>
         <Authors>Etienne Baudoux</Authors>
         <Title>Image Helper</Title>
         <Description>
