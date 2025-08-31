@@ -31,7 +31,7 @@ jobs:
       run: dotnet restore src/WindowSill.ImageHelper/WindowSill.ImageHelper.csproj
 
     - name: Create NuGet package with MSBuild
-      run: msbuild src/WindowSill.ImageHelper/WindowSill.ImageHelper.csproj /p:Configuration=Release /p:Platform="Any CPU" /p:PackageOutputPath=${{ github.workspace }}/artifacts
+      run: msbuild src/WindowSill.ImageHelper/WindowSill.ImageHelper.csproj /p:Configuration=Release /p:Platform="Any CPU" /p:PackageOutputPath=${{ github.workspace }}/artifacts /p:RestorePackages=false
 
     - name: Publish to NuGet.org
       run: dotnet nuget push "${{ github.workspace }}\artifacts\*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
